@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crown &amp; Curls Hair Studio - Sample Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <div class="logo">Crown <span>&amp;</span> Curls Hair Studio</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#prices">Prices</a>
+      <a href="#about">About</a>
+      <a href="#book">Book</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero" id="home">
+    <div class="hero-text">
+      <small>SAMPLE LANDING PAGE</small>
+      <h1>Beautiful hair, styled with care.</h1>
+      <p>Braids, natural hair care and styling by a professional hairstylist. Book your appointment today.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="#book">Book now</a>
+        <a class="btn ghost" href="#prices">See prices</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <div>Crown &amp; Curls<span>Hair styling and braiding</span></div>
+    </div>
+  </div>
+
+  <section id="prices">
+    <div class="wrap">
+      <h2>Price list</h2>
+      <p class="lead">Sample prices for demonstration only.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Braids</h3>
+          <div class="row"><span>Cornrows</span> <b>N5,000</b></div>
+          <div class="row"><span>Box braids</span> <b>N15,000</b></div>
+          <div class="row"><span>Knotless braids</span> <b>N20,000</b></div>
+        </div>
+        <div class="card">
+          <h3>Hair care</h3>
+          <div class="row"><span>Wash and blow-dry</span> <b>N6,000</b></div>
+          <div class="row"><span>Deep treatment</span> <b>N8,000</b></div>
+          <div class="row"><span>Silk press</span> <b>N12,000</b></div>
+        </div>
+        <div class="card">
+          <h3>Styling</h3>
+          <div class="row"><span>Wig installation</span> <b>N10,000</b></div>
+          <div class="row"><span>Kids hairstyles</span> <b>N4,000</b></div>
+          <div class="row"><span>Event styling</span> <b>N18,000</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>About the studio</h2>
+      <p>Crown and Curls is a sample hair studio used to show how HTML, CSS and JavaScript work together on a responsive landing page with a price list and a booking form.</p>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="wrap">
+      <h2>Book an appointment</h2>
+      <p class="lead">Fill in the form and the studio will confirm your booking.</p>
+      <form id="bookForm" novalidate>
+        <label for="name">Full name</label>
+        <input type="text" id="name" autocomplete="name">
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" inputmode="numeric" autocomplete="tel">
+
+        <label for="style">Hairstyle</label>
+        <select id="style">
+          <option>Cornrows</option>
+          <option>Box braids</option>
+          <option>Knotless braids</option>
+          <option>Silk press</option>
+          <option>Wig installation</option>
+        </select>
+
+        <p id="msg" role="status" aria-live="polite"></p>
+        <button class="btn" type="submit">Request booking</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>Sample page for demonstration only</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
